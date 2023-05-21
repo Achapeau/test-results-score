@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_quizz.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>&copy WILD-QUIZZ</title>
+</head>
+<body class="quizz-body">
+    <header>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+    </header>
+
+    <main class="quizz-main">
+        <section class="question">
+            <h1>Question 1</h1>
+            <p>Que veulent dire les chiffres au fond des verres de cantine ?</p>
+
+        </section>    
+        <section class="answers">
+            <button class="answer1">C’est l’âge que vous avez et le plus jeune va chercher l’eau</button>
+            <button class="answer2">C’est la note que vous aurez à l’interro de cet après-midi</button>
+            <button class="answer3">C’est le nombre de filles avec qui vous sortirez dans la vie</button>
+            <button class="answer4"><a href = "results.html">on sait pas, ça reste un mystère mais on est tous sur le coup…</a></button>
+            <!-- J'ai mis un href results.com juste pour amener sur la page des résultats plus rapidement-->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy 2023 WILD-QUIZZ. All rights reserved</p>
+    </footer>
+    <script>
+        let stockCorrectAnswer = 0;
+        let stockNumberOfQuestions = 0;
+        localStorage.right = 0;//ici, la variable right est stockée dans le localstorage, avec la valeur associée
+            
+            const correct = document.querySelector(".answer1");/* ici, on cible la classe answer1 comme une bonne réponse.
+            Si on créé un ID qui n'a pas un emplacement fixe lors de la génération de réponse du quizz,
+            et qu'on le cible, il n'y a plus de soucis de réponse fixe */ 
+            correct.addEventListener('click', function() {
+                stockCorrectAnswer++;
+                localStorage.setItem('right', stockCorrectAnswer);
+            });
+            
+            
+
+    </script>
+   <!-- <script src="index.js"></script> -->
+</body>
+</html>

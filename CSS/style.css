@@ -1,0 +1,135 @@
+:root {
+    
+    --background-img : url(../img/codioful.jpg);
+    --header-color: #2d2d2d;
+    --footer-color: #2d2d2d;
+    --buttons-color: #EFC762;
+    --questions-color: #D9D9D9;
+    --font-family: Roboto, "Segoe UI", Tahoma, sans-serif;  
+    --title-font-size: 3rem;
+    --text-font-size: 1rem;
+    --text-font-color: #f2f2f2;
+    --burger-menu-color: #f2f2f2;
+}
+/* General properties */
+* { 
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--text-font-color);
+}
+
+
+
+body {
+    background-image: var(--background-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 2px 2px 5px rgba(7, 5, 37, 0.763);
+    text-shadow: -2px -2px 5px rgba(7, 5, 37, 0.763);
+}
+/* Styles header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: var(--header-color);
+    align-self: flex-end;
+    width: 100vw;
+    }
+
+    
+    .logo {
+    width: 80px;
+    height: 40px;
+    }
+    
+    .menu-burger {
+        background-color: var(--header-color);
+        height: auto;
+        width: 60px;
+        border: 0px;
+        color: var(--burger-menu-color);
+        cursor: pointer;
+    } 
+
+    /* Styles du menu déroulant */
+     
+    .menu-dropdown {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        background-color: var(--footer-color);
+        padding: 10px;
+        z-index: 1;
+        text-align: center;
+      }
+    
+      .menu-dropdown a {
+        display: block;
+        color: var(--burger-menu-color);
+        text-decoration: none;
+        padding: 5px;
+        
+      }
+    
+    .menu-dropdown a:hover {
+        background-color: darkgray;
+    
+    }
+     
+    
+  
+    
+    /* Icône burger */
+    .burger-icon span {
+      display: block;
+      width: 35px;
+      height: 5px;
+      background-color: var(--header-color);
+      margin: 6px 0;
+    }
+
+    footer {
+        align-self: flex-end;
+        background-color: var(--footer-color);
+        color: var(--text-font-color);
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        width: 100%;
+      }
+
+    @media screen and (min-width: 640px) {
+        header {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            }
+       
+        .menu-burger {
+        display: none;
+        } 
+
+        .menu-dropdown {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 85%;
+            position: relative;
+            top: 0;
+                     
+            
+        }
+
+    }

@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  background-color: #2d2d2d;
+}
+
+.logo {
+  width: 80px;
+  height: 40px;
+}
+
+.menu-burger {
+  background-color: #2d2d2d;
+  height: auto;
+  width: 60px;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Styles du menu déroulant */
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  background-color: #2d2d2d;
+  padding: 10px;
+  z-index: 1;
+  text-align: center;
+}
+
+.menu-dropdown a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.menu-dropdown a:hover {
+  background-color: darkgray;
+}
+
+/* Styles partie principale */
+
+main {
+  background-image: url(../img/codioful.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: calc(100vh - 97px);
+}
+
+/* Styles bouton */
+
+.btn-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.btn-start {
+  padding: 10px 20px;
+  background-color: #efc762;
+  border: solid 2px darkgrey;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+}
+.btn-category {
+  padding: 10px 20px;
+  background-color: #f56b13;
+  border: solid 2px darkgrey;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+}
+.btn-results {
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  border: solid 2px darkgrey;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.btn-contact {
+  padding: 10px 20px;
+  background-color: #5df2fd;
+  border: solid 2px darkgrey;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+}
+
+/* Styles du footer */
+
+footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Contact */
+
+.contact-form {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 330px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form textarea.message {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background: linear-gradient(#922765, #4f174d, #1c061b, #eb2364);
+  border: solid 2px darkgrey;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}

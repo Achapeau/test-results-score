@@ -1,0 +1,27 @@
+body {
+    color:var(--text-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main a {
+    color:rgb(0, 255, 60);
+}
+
+.ressource-main {
+    padding-bottom: 2.5rem;
+    margin: 20px 10px 20px 10px ;
+    min-height: calc(100vh - 97px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ressource-main article {
+    margin-bottom: 2rem;
+}
+
+.ressource-main  h1, h2, h3 {
+    margin-bottom: 2rem;
+}
